@@ -4,7 +4,11 @@ const Search = props => {
   return (
     <div className="ui search">
       <div className="ui icon input">
-        <input className="prompt"/>
+        <input 
+          className="prompt" 
+          onChange={props.updateQuery}
+          value={props.query}
+          />
         <i className="search icon" />
       </div>
     </div>
